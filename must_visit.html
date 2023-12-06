@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kovács Dorka">
+    <meta name="copyright" content="Kizárólag oktatási célokat szolgál">
+    <meta name="description" content="Úti napló portugáliáról">
+    <link rel="stylesheet" href="style/portugal_style.css">
+    <link rel="icon" href="kepek/flag.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({ 
+        rules: {
+            uticel: "required",
+            datum: "required",
+            nev: "required",
+            fo: "required",
+            email: {required: true, email: true},
+            telefon: {required: true, minlength: 13, maxlength: 13},
+            szerzodes: {required: true, minlength: 5, maxlength: 5},
+        },
+
+        messages:{uticel:"<br> Kérem válasszon úticélt!",
+                datum: "<br> Kérem válasszon dátumot!",
+                nev: "<br> Kérem adja meg a nevét!",
+                fo: "<br> Kérem adja meg hány főre szeretne foglalni!",
+                email:{required:"<br> Kérem adjon meg egy email címet!",
+                        email:"<br> Kérem a megfelelő formátumban adja meg az email címét!"},
+                telefon:{required:"<br> Kérem adja meg a telefonszámát!",
+                            minlength:"<br> Kérem a megfelelő formátumban adja meg a telefonszámát!",
+                        maxlength: "<br> Kérem a megfelelő formátumban adja meg a telefonszámát!"},
+                szerzodes:{required:"<br> Kérem adja meg a szerzodesszamot!",
+                            minlength:"<br> Kérem a megfelelő formátumban adja meg a szerződésszámát!",
+                            maxlength: "<br> Kérem a megfelelő formátumban adja meg a szerződésszámát!"},
+                },
+        });
+        });
+        </script>
+        <title>Portugal Travel Guide</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Portugal Travel Guide</a></h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Tudnivalók</a></li>
+                <li><a href="etelek_italok.html">Ételek</a></li>
+                <li><a href="sajat_emlekek.html">Emlékeim</a></li>
+                <li><a class="active" href="#">TOP 6</a></li>
+                <li><a href="kviz.html">Kvíz</a></li>
+            </ul>
+        </nav>
+        <article class="visit">
+            <h2>Pena Palota, Sintra</h2>
+            <p class="tartalom">A Pena-palota egy mesés kastély Sintra városában, Portugáliában. 
+            A 19. századi romantikus stílusban épült, és az egyik legismertebb látnivalója a régió számos lenyűgöző palotájának és kastélyának. 
+            A Pena-palota eredetileg a mai neoromantikus stílus egyik korai példája volt, 
+            amely számos stílus és elem keverékét tartalmazza, beleértve a neogótikát, a neomaureszkot és a neoreneszánsz elemeket is.<br></p>
+            <img src="kepek/penapalace.jpg" alt="Pena palota">
+        </article>
+        <article class="visit">
+            <h2>Belém Torony, Lisszabon</h2>
+            <p class="tartalom">A Belém-torony (Torre de Belém) egy különleges tengerparti erődítmény Lisszabonban, Portugáliában. 
+            A 16. század elején épült, és a Tejo-folyó torkolatánál, a Belém negyedben található.
+            A torony eredetileg védelmi célt szolgált, és része volt a lisszaboni védelmi rendszernek a tengeri hozzáféréstől való védelem érdekében.<br></p>
+            <img src="kepek/belem.jfif" alt="belém torony">
+        </article>
+        <article class="visit">
+            <h2>Jerónimos Monostor, Lisszabon</h2>
+            <p class="tartalom">A Jerónimos Monostor (Portugálul: Mosteiro dos Jerónimos) Lisszabon egyik legjelentősebb és leglátványosabb történelmi épülete. 
+                A Manuelin stílusban épült monostor a 16. században kezdődött és közel egy évszázadig tartó építkezéssel készült el. 
+                A monostor a lisszaboni Belém negyedben található, a Tejo-folyó partján.<br></p>
+            <img src="kepek/jeronimos.jfif" alt="Jerónimos monostor">
+        </article>
+        <article class="visit">
+            <h2>Hajókázás Portoban</h2>
+            <p class="tartalom">A Douro-folyó Portugáliában és Spanyolországban ered, majd a Pireneusoktól délnyugatra folyik. 
+            Portugáliában a Douro a főbb folyórendszerek egyike, és egyike az Iberiai-félsziget legfontosabb folyóinak.<br></p>
+            <img src="kepek/duoro.jpg" alt="Douro-folyó">
+        </article>
+        <article class="visit">
+            <h2>Algarve Beaches</h2>
+            <p class="tartalom">A Belém-torony (Torre de Belém) egy különleges tengerparti erődítmény Lisszabonban, Portugáliában. 
+            A 16. század elején épült, és a Tejo-folyó torkolatánál, a Belém negyedben található.
+            A torony eredetileg védelmi célt szolgált, és része volt a lisszaboni védelmi rendszernek a tengeri hozzáféréstől való védelem érdekében.<br></p>
+            <img src="kepek/algarve.webp" alt="Algarve tengerpart">
+        </article>
+        <article class="visit">
+            <h2>Ribeira tér, Porto</h2>
+            <p class="tartalom">A Ribeira tér Portó egyik legikonikusabb és legnépszerűbb helyszíne, mely a Douro-folyó partján található. 
+                A tér a város óvárosának szívében fekszik, és a történelmi és kulturális jelentőségű Ribeira negyed részét képezi.
+                A tér jellemzője az apró, színes házaknak, amelyek a parton sorakoznak, és a közvetlen közelben találhatók.<br></p>
+            <img src="kepek/porto.jpg" alt="portói házak">
+        </article>
+        <article class="rendeles">
+            <h2>Foglalás</h2><hr>
+            <p>Most lehetőséged van nálunk is lefoglalni egy idegenvezetős kirándulást az alábbi helyek egyikére!
+            Csak válaszd ki a számodra legideálisabb úticélt és dátumot, mi intézzük a többit :)</p>
+            <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="myform" novalidate>
+                <label for="uticel">Kiválasztott úticél:&nbsp;
+                <select name="uticel" id="uticel" class="urlap" size="1" required>
+                    <option value="" disabled selected>Válasszon egy lehetőséget!</option>
+                    <option value="pena">Pena Palota</option>
+                    <option value="belem">Belém Torony</option>
+                    <option value="jeronimos">Jerónimos Monostor</option>
+                    <option value="hajokazas">Hajókázás Portoban</option>
+                    <option value="algarve">Algarve Beaches</option>
+                    <option value="ribeira">Ribeira tér</option>
+                </select></label><br>
+                <label for="datum">Válassz dátumot a kirándulásra!&nbsp;
+                <input type="date" name="datum" id="datum" min="2024-06-25" max="2024-09-15" class="urlap" required></label>
+                <br><p class="lila">FONTOS! Kirándulásaink 06.25-09.15 között érhetőek el</p><hr>
+                Már csak az adataidra van szükségünk, hogy minden simán menjen!<br>
+                <label for="nev">Név:&nbsp;
+                    <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" class="urlap" required>
+                </label><br>
+                <label for="fo">Hány főre szeretnél foglalni?&nbsp;
+                    <input type="number" name="fo" id="fo" min="1" max="10" step="1" class="urlap" placeholder="pl.:1" required>
+                </label><br>
+                <label for="email">Email cím:&nbsp;
+                    <input type="email" name="email" id="email" class="urlap" required>
+                </label><br>
+                <label for="telefon">Telefonszám:&nbsp;<input type="tel" name="telefon" id="telefon" value="+36" class="urlap" required></label><br>
+                <label for="szerzodes">Szerződésszám:&nbsp;<input type="number" name="szerzodes" id="szerzodes" min="5" step="1" class="urlap" value="12" required></label>
+                <br><p class="lila">A szerződésszám az utazási szerződés bal felső sarkában található 12-vel kezdődő 5 jegyű szám!</p><br>
+                <label>Megjegyzés:&nbsp;<textarea name="megjegyzes" rows="2" cols="40" placeholder="Írja ide bármilyen egyéb megjegyzését!" class="urlap"></textarea></label><br><br>
+                <input type="submit" value="Elküldés" id="kuldes" class="gomb">
+            </form>
+        </article>
+    </div>
+    <footer>Ez az oldal kizárólag oktatási célokat szolgál.</footer>
+</body>
+
+</HTML>

@@ -1,0 +1,253 @@
+/*ÁLTALANOS*/
+* {box-sizing: border-box;}
+
+html {padding: 0px;
+    margin: 0px;}
+
+body {background-color: rgb(241, 210, 189);
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Hedvig Letters Serif', serif;}
+
+.container {display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url("ocean.jfif");
+    background-size: cover;
+    background-attachment: fixed;}
+
+.container>* {height: fit-content;
+    margin: 1%;}
+
+header {display:flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+    background-color:rgb(204, 153, 153);
+    border-bottom: solid 5px #DA8383;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(255, 255, 255);}
+
+h1 a{text-decoration: none;
+    padding: 8px 5px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-family: 'Hedvig Letters Serif', serif;
+    letter-spacing: 6px;
+    text-shadow: 4px 2px 3px #000000;}
+
+
+article {flex: 1 1 100%;
+    padding: 0px 8px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;}
+
+
+aside {background-color: rgb(205, 83, 96);
+    padding: 15px;
+    color: #ffffff;
+    text-align: justify;
+    border-radius: 15px;
+    word-spacing: 10px;}
+
+footer{background-color: #C9ADA7;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;}
+
+img {height: auto;
+    width: 100%;
+    float: none;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;}
+    
+h2 {text-align: center;
+    font-family: 'Hedvig Letters Serif', serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;}
+    
+p.tartalom {padding: 3.5px;
+        text-indent: 1.1em;}
+    
+
+/*MENU*/
+nav {padding: 8px;
+    flex: 1 1 100%;}
+
+nav ul {display: flex; 
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Hedvig Letters Serif', serif;
+    letter-spacing: 4px;
+    font-size: 20px;}
+
+nav li a {display: block;
+    padding: 15px;
+    margin: 13px;
+    color: rgb(255, 255, 255);
+    background-color: #5E8FE2;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 3px 3px 7px black;}
+
+nav ul li a.active {background-color: #DA8383;}
+
+nav li a:hover {background-color: #CC6666;
+transform: scale(1.1);}
+
+/*FŐOLDAL*/
+article.halvany {background-color:#CC9999;}
+
+article.sotetebb {background-color: #CC6666;}
+
+article.pirosas {background-color: rgb(205, 83, 96);}
+
+article.atlatszo{background-color:rgba(204, 153, 153, 0.7);
+text-align: center;
+font-family: 'Hedvig Letters Serif', serif;}
+
+.halvany img{height:80%;}
+
+article video{text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;}
+
+/*ÉTELEK, ITALOK*/   
+aside.etelek{background-color: rgba(204, 102, 102, 0.7);}
+
+.etel_kep {float: left;
+    height: 250px;
+    width: 220px;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    transition: transform .3s;}
+
+.etel_kep:hover {transform: scale(1.2);}
+
+p.lila{font-weight: bold;
+color: #5716B7;
+font-size: 19px;
+text-shadow: 2px 1px 5px white;
+text-align: center;}
+
+p.boraszatok{text-align: left;
+        text-shadow: 2px 1px 5px black;
+        font-size: 18px;}
+
+ul.boraszatok li a{text-decoration: none;
+color:#d9acac;
+text-shadow: 2px 1px black;}
+
+/*SAJAT EMLEKEK*/
+.container_query{background-color: rgba(216, 169, 169, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;}
+article.galeria{background-color:rgb(204, 153, 153);
+margin-bottom: 2vw;}
+.galleria{
+    margin: auto;
+    width: 60vw;
+    height: 60vw;
+}
+
+/*MUST VISIT*/
+article.visit{background-color: rgba(243, 151, 151, 0.4);}
+.visit img {transition: transform .3s;
+    margin: 25px;
+width: 400px;}
+
+.visit img:hover {transform: scale(1.2);}
+
+.rendeles {background-color: #bc9992;
+color:#000000;
+font-size: 20px;
+padding: 5px;}
+
+.rendeles h2{text-shadow: 2px 2px 5px white;
+font-size: 35px;
+font-weight: bold;}
+
+.urlap{font-size: 20px;
+    border: 3px solid #CC6666;
+    background-color:#c1606027;
+    font-style: italic;
+    font-family: 'Hedvig Letters Serif', serif;
+    border-radius: 10px;}
+
+label.error{color:red;}
+
+
+/*KVÍZ*/
+article.kviz{background-color: rgba(255, 204, 204, 0.4);
+    color: black;
+    padding: 20px;}
+
+article.kviz h2{text-shadow: 2px 1px 4px white;}
+
+article.kviz p{font-weight: bold;}
+
+article.kviz input {font-size: 30px;}
+
+article input.gomb{font-size: 20px;
+    border-radius: 8px;
+    background-color: #CC6666;
+    padding: 12px 30px;
+    width: 250px;
+    font-family: 'Hedvig Letters Serif', serif;}
+
+article input.gomb:hover{background-color:#CC9999;}
+
+.kek {background-color: rgba(100,149,237, 0.85);}
+.pont{font-size: 20px;
+color:#5716B7;
+text-shadow: 1px 1px 3px white;
+text-align: center;}
+
+/*RESZPONZIVITÁS*/
+    /*tablet*/
+@media all and (min-width: 600px) {
+    nav {flex-basis: 50%;}
+
+    article {flex-basis: 100%;}
+
+    aside {flex-basis: 100%;}
+
+    article.galeria {flex-basis: 100%;}}
+
+    /*számítógép*/
+@media all and (min-width: 768px) {
+    nav ul{flex-direction: row;
+        flex-wrap: nowrap;}
+
+    nav ul li{flex-basis: 20%;}
+
+    article {flex-basis: 48%;}
+
+    article.galeria{flex-basis: 73%;}
+
+    aside {flex-basis: 50%;}
+
+    aside.eredmenyek {flex-basis: 23%;}
+
+    article.gyumolcs {flex-basis: 73%;}}

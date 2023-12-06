@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kovács Dorka">
+    <meta name="copyright" content="Kizárólag oktatási célokat szolgál">
+    <meta name="description" content="Úti napló portugáliáról">
+    <link rel="stylesheet" href="style/portugal_style.css">
+    <link rel="icon" href="kepek/flag.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <script src="script/portugal_script.js"></script>
+    <title>Portugal Travel Guide</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Portugal Travel Guide</a></h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Tudnivalók</a></li>
+                <li><a href="etelek_italok.html">Ételek</a></li>
+                <li><a href="sajat_emlekek.html">Emlékeim</a></li>
+                <li><a href="must_visit.html">TOP 6</a></li>
+                <li><a class="active" href="#">Kvíz</a></li>
+            </ul>
+        </nav>
+        <article class="kviz">
+            <form action="#">
+                <h2>Vajon mennyire ismered Portugáliát?</h2>
+                    <p>1. Melyik város a portugál főváros?</p>
+                    <label><input type="radio" name="fovaros" id="porto"><span id="porto1"> Porto</span></label><br>
+                    <label><input type="radio" name="fovaros" id="coimbra"><span id=coimbra1>Coimbra</span></label><br>
+                    <label><input type="radio" name="fovaros" id="lisszabon"><span id="lisszabon1"> Lisszabon</span></label><br>
+                    <label><input type="radio" name="fovaros" id="faro"><span id="faro1">Faro</span></label><br>
+
+                    <p>2. Melyik étel híres portugál fogás?</p>
+                    <label><input type="checkbox" id="pastel"><span id="pastel1">Pastel de Nata</span></label><br>
+                    <label><input type="checkbox" id="paella"><span id="paella1">Paella</span></label><br>
+                    <label><input type="checkbox" id="lasagne"><span id="lasagne1">Lasagne</span></label><br>
+                    <label><input type="checkbox" id="bacalhau"><span id="bacalhau1">Bacalhau á Brás</span></label><br>
+
+                    <p>3. Melyik területen termesztik a híres portói bort?</p>
+                    <label><input type="radio" name="termeszt" id="alentejo"><span id="alentejo1">Alentejo</span></label><br>
+                    <label><input type="radio" name="termeszt" id="azori"><span id="azori1">Azori-szigetek</span></label><br>
+                    <label><input type="radio" name="termeszt" id="duoro"><span id="duoro1">Duoro-völgy</span></label><br>
+                    <label><input type="radio" name="termeszt" id="algarve"><span id="algarve1">Algarve</span></label><br>
+
+                    <p>4. Ki volt az a híres portugál felfedező, aki az első európai volt, aki elérte Indiát a tengeri útvonalon?</p>
+                    <label><input type="radio" name="felfedezo" id="magellan"><span id="magellan1">Ferdinand Magellan</span></label><br>
+                    <label><input type="radio" name="felfedezo" id="gama"><span id="vasco1">Vasco da Gama</span></label><br>
+                    <label><input type="radio" name="felfedezo" id="columbus"><span id="columbus1">Christopher Columbus</span></label><br>
+                    <label><input type="radio" name="felfedezo" id="marco"><span id="marco1">Marco Polo</span></label><br>
+
+                    <p>5. Melyik NEM egy portugál látnivaló?</p>
+                    <label><input type="checkbox" id="madeira"><span id="madeira1">Madeira-szigetek</span></label><br>
+                    <label><input type="checkbox" id="jeronimos"><span id="jeronimos1">Jerónimos kolostor</span></label><br>
+                    <label><input type="checkbox" id="bazilika"><span id="bazilika1">Szent Péter bazilika</span></label><br>
+                    <label><input type="checkbox" id="pena"><span id="pena1">Pena-palota</span></label><br>
+                    <label><input type="checkbox" id="machu"><span id="machu1">Machu Picchu</span></label><br><br>
+
+                    <input type="button" class="gomb" value="Elküldés" id="kuldes" onclick="bekuld()">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Alaphelyzet" class="gomb">
+                    <p class="kviz" id="pontszam"></p>
+        </form>
+        </article>
+        <aside class="eredmenyek kek">
+            <h2>Eredmények:</h2>
+            <h2>5 pont</h2>
+            <p class="pont">Ezért megérdemelsz egy Pastel de Nata-t!</p>
+            <h2>4-3 pont</h2>
+            <p class="pont">Itt az ideje elugrani egy Pastel de Nata-ért, hogy felfrissítsd az emlékeket!</p>
+            <h2>2-0 pont</h2>
+            <p class="pont">Keresd meg a Pastel de Nata receptet a weboldalon és vigaszként készítsd el magadnak!</p>
+        </aside>
+    </div>
+    <footer>Ez az oldal kizárólag oktatási célokat szolgál.</footer>
+</body>
+
+</HTML>
