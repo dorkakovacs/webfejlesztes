@@ -1,7 +1,9 @@
 # webfejlesztes
 A webfejlesztés tantárgy beadandója
+
 Oldal készítője: Kovács Dorka
-Az oldal URL címe: https://github.com/dorkakovacs/webfejlesztes.git
+
+Az oldal URL címe: https://dorkakovacs.github.io/webfejlesztes/
 
 A weboldal egy Portugáliáról szóló útikalauz, mivel idén nyáron tölthettem ott el egy hetet anyukámmal. A oldalon kitérek a legfőbb látnivalókra, ismert ételekre, italokra és egy képgaléria is található a saját képeimmel.
 
